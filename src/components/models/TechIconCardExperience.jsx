@@ -1,4 +1,4 @@
-import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
+import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 const TechIconCardExperience = ({ model }) => {
@@ -6,13 +6,23 @@ const TechIconCardExperience = ({ model }) => {
 
   return (
     <Canvas>
-      <ambientLight />
-      {/* <directionalLight position={[3, 3, 10]} intensity={5} /> */}
-      <Environment preset="forest" />
-      <group scale={model.scale} rotation={[0, -Math.PI / 2, 0]}>
-        <primitive object={scene.scene} />
-      </group>
-      <OrbitControls enableZoom={false} autoRotate />
+      <ambientLight intensity={0.3} />
+      <directionalLight position={[5, 5, 5]} intensity={1} />
+      <spotLight
+        position={[10, 15, 10]}
+        angle={0.3}
+        penumbra={1}
+        intensity={2}
+      />
+      <Environment preset="city" />
+
+      <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
+        <group scale={model.scale} rotation={model.rotation}>
+          <primitive object={scene.scene} />
+        </group>
+      </Float>
+
+      <OrbitControls enableZoom={false} />
     </Canvas>
   );
 };
