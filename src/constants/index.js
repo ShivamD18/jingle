@@ -1,3 +1,8 @@
+import { GitLogo } from "../components/models/GitLogo";
+import { PythonLogo } from "../components/models/PythonLogo";
+import { ReactLogo } from "../components/models/ReactLogo";
+import { ThreejsLogo } from "../components/models/ThreejsLogo";
+
 const navLinks = [
   {
     name: "Work",
@@ -78,31 +83,54 @@ const abilities = [
   },
 ];
 
+// const techStackIcons = [
+//   {
+//     name: "React Developer",
+//     modelPath: "/models/react.glb",
+//     color: "blue",
+//   },
+//   {
+//     name: "AWS Developer",
+//     modelPath: "/models/aws.glb",
+//     color: "orange",
+//   },
+//   {
+//     name: "Javascript Developer",
+//     modelPath: "/models/javascript.glb",
+//     color: "green",
+//   },
+//   {
+//     name: "Interactive Developer",
+//     modelPath: "/models/python.glb",
+//     color: "yellow",
+//   },
+//   {
+//     name: "Project Manager",
+//     modelPath: "/models/git-svg.glb",
+//     color: "red",
+//   },
+// ];
+
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/models/react.glb",
-    color: "blue",
+    component: ReactLogo,
   },
   {
-    name: "AWS Developer",
-    modelPath: "/models/aws.glb",
-    color: "orange",
+    name: "Next.js",
+    component: ReactLogo,
   },
   {
-    name: "Javascript Developer",
-    modelPath: "/models/javascript.glb",
-    color: "green",
+    name: "Python Developer",
+    component: PythonLogo,
   },
   {
     name: "Interactive Developer",
-    modelPath: "/models/python.glb",
-    color: "yellow",
+    component: ThreejsLogo,
   },
   {
     name: "Project Manager",
-    modelPath: "/models/git-svg.glb",
-    color: "red",
+    component: GitLogo,
   },
 ];
 
