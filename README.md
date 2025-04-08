@@ -274,10 +274,6 @@ section {
   .app-showcase {
     @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
-    .container {
-      @apply mx-auto;
-    }
-
     .showcaselayout {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
@@ -314,7 +310,7 @@ section {
       }
 
       img {
-        @apply w-full h-full object-fill rounded-xl;
+        @apply w-full h-full object-contain rounded-xl;
       }
 
       h2 {
@@ -562,9 +558,13 @@ section {
   border: 2px solid transparent;
   background: var(--gradient);
   background-attachment: fixed;
-  mask: linear-gradient(#0000, #0000), conic-gradient(from calc((
-              var(--start) - 15
-            ) * 1deg), #ffffff1f 0deg, white, #ffffff00 100deg);
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from calc((var(--start) - 15) * 1deg),
+      #ffffff1f 0deg,
+      white,
+      #ffffff00 100deg
+    );
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
   opacity: 0;
@@ -586,6 +586,7 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
 ```
 
 </details>
