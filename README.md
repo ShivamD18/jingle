@@ -101,6 +101,18 @@ Install the project dependencies using npm:
 npm install
 ```
 
+**Set Up Environment Variables**
+
+Create a new file named `.env` in the root of your project and add the following content:
+
+```env
+VITE_APP_EMAILJS_SERVICE_ID=
+VITE_APP_EMAILJS_TEMPLATE_ID=
+VITE_APP_EMAILJS_PUBLIC_KEY=
+```
+
+Replace the placeholder values with your actual **[EmailJS](https://www.emailjs.com/)** credentials.
+
 **Running the Project**
 
 ```bash
@@ -847,18 +859,22 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
+    url: "https://www.instagram.com/",
     imgPath: "/images/insta.png",
   },
   {
     name: "fb",
+    url: "https://www.facebook.com/",
     imgPath: "/images/fb.png",
   },
   {
     name: "x",
+    url: "https://www.x.com/",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
+    url: "https://www.linkedin.com/",
     imgPath: "/images/linkedin.png",
   },
 ];
