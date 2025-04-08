@@ -434,7 +434,7 @@ section {
     }
 
     p {
-      @apply text-center md:text-start cursor-pointer;
+      @apply text-center md:text-start
     }
 
     .socials {
