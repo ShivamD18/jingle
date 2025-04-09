@@ -1082,7 +1082,7 @@ useGLTF.preload("/models/optimized-room.glb");
 </details>
 
 <details>
-<summary><code>/components/models/contact/Computer.jsx</code></summary>
+<summary><code>components/models/contact/Computer.jsx</code></summary>
 
 ```jsx
 import { useGLTF } from "@react-three/drei";
