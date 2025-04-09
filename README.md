@@ -372,7 +372,7 @@ section {
   }
 
   .timeline {
-    @apply absolute h-[110%] -top-10 w-14 md:w-28 z-20 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
   }
 
   .timeline-logo {
@@ -434,7 +434,7 @@ section {
     }
 
     p {
-      @apply text-center md:text-start
+      @apply text-center md:text-start cursor-pointer;
     }
 
     .socials {
@@ -554,6 +554,7 @@ section {
 .card {
   --start: 0;
   position: relative;
+  z-index: 40;
   overflow: hidden;
   transition: border-color 1s ease-in-out;
 }
@@ -570,13 +571,9 @@ section {
   border: 2px solid transparent;
   background: var(--gradient);
   background-attachment: fixed;
-  mask: linear-gradient(#0000, #0000),
-    conic-gradient(
-      from calc((var(--start) - 15) * 1deg),
-      #ffffff1f 0deg,
-      white,
-      #ffffff00 100deg
-    );
+  mask: linear-gradient(#0000, #0000), conic-gradient(from calc((
+              var(--start) - 15
+            ) * 1deg), #ffffff1f 0deg, white, #ffffff00 100deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
   opacity: 0;
@@ -598,7 +595,6 @@ section {
 .card:hover::before {
   opacity: 1;
 }
-
 ```
 
 </details>
