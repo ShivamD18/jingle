@@ -243,7 +243,7 @@ section {
   }
 
   .timeline {
-    @apply absolute h-[110%] -top-10 w-14 md:w-28 z-20 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
   }
 
   .timeline-logo {
@@ -425,6 +425,7 @@ section {
 .card {
   --start: 0;
   position: relative;
+  z-index: 40;
   overflow: hidden;
   transition: border-color 1s ease-in-out;
 }
