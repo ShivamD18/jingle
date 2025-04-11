@@ -89,8 +89,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/3d-portfolio_2025.git
-cd 3d-portfolio_2025
+git clone https://github.com/adrianhajdin/3d-portfolio.git
+cd 3d-portfolio
 ```
 
 **Installation**
