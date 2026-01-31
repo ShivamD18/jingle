@@ -28,3 +28,11 @@ dist/
 .env
 
 public/models/robot.glb
+models/robot.glb
+dist/models/robot.glb
+
+node_modules/
+dist/
+
+public/models/robot.glb
+public/models/robot_BACKUP.glb
