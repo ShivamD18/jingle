@@ -33,9 +33,6 @@ jobs:
         working-directory: 3d-portfolio
         run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: 3d-portfolio/dist
 
   deploy:
     needs: build
