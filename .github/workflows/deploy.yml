@@ -22,7 +22,7 @@ jobs:
 
       - name: Install
         working-directory: 3d-portfolio
-        run: npm ci
+        run: npm install
 
       - name: Build
         working-directory: 3d-portfolio
